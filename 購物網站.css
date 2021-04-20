@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* ==========表頭設定========== */
+.wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.header{
+    border-bottom: 8px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h1{
+    font-size: 23px;
+    margin-left: 20px;
+}
+.header h1 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.animate__infinite {
+    --animate-repeat: 30;
+  }
+.header h1 a:hover{
+    color: rgb(231, 73, 231);
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding: 20px;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+}
+.menu li a:hover{
+    color: rgb(231, 73, 231);
+}
+/* =========banner設定============= */
+.banner img{
+    width: 80%;
+    height: 400px;
+}
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.swiper-wrapper{
+    text-align: center;
+}
+.banner h2{
+    color: white;
+    position: absolute;
+    left: 150px;
+    bottom: 20px;
+    z-index: 99;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+/* =============床墊優勢=============== */
+.advantage{
+    margin-top: 50px;
+}
+.advantage h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.advantage ul{
+    display: flex;
+    justify-content: space-between;
+}
+.advantage ul li{
+    width: 33%;
+}
+.advantage ul li p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ==============家具比較=============== */
+.compare{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.compare h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.table{
+    text-align: center;
+    width: 80%;
+}
+.table th{
+    font-size: 18px;
+}
+.table th,.table td{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.title{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.table i{
+    color: rgb(231, 73, 231);
+    font-size: 23px;
+}
+.other{
+    color: rgb(85, 84, 84);
+    font-weight: 550;
+}
+/* ===============評論================ */
+.recommend{
+    background:  #301E5F;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.recommend h3{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 30px;
+}
+.item1{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.item1 li{
+    display: flex;
+    border: 1px solid black;
+    width: 28%;
+    background: white;
+    margin-right: 4%;
+}
+.personUp{
+    display: flex;
+    padding: 10px;
+}
+.personUp-item{
+    padding: 10px;
+}
+.personDown{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.img img{
+    height: 100%;
+}
+.personUp img{
+    width: 35%;
+}
+.personUp-txt{
+    color: blueviolet;
+    font-weight: 550;
+}
+.personUp-item p{
+    font-family: 650;
+}
+.recommend span{
+    font-weight: 550;
+}
+.item2{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+.item2 li{
+    display: flex;
+    border: 1px solid black;
+    width: 28%;
+    background: white;
+    margin-left: 4%;
+}
+/* /* =============運送================ */
+.transport{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.transport h4{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.transport ul li i{
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 20px;
+}
+.transport ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.transport ul li{
+    text-align: center;
+    width: 20%;
+}
+.transport p{
+    margin-top: 8px;
+    font-weight: 600;
+}
+/* =============產品列表============== */
+
+.productList{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.product select{
+    width: 25%;
+    padding: 10px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+.productList li{
+    width: 23%;
+    margin-bottom: 20px;
+}
+.product img{
+    height: 100%;
+    width: 100%;
+}
+.btn{
+    width: 100%;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 5px 0;
+    font-weight: 550;
+    font-size: 18px;
+}
+.btn:hover{
+    background: #301E5F;
+    cursor: pointer;
+}
+.img{
+    position: relative;
+    margin-bottom: 10px;
+}
+.newLogo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background: #301E5F;
+    padding: 10px;
+    border-radius: 10px;
+}
+.item{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.price{
+    font-weight: 600;
+    text-decoration: line-through;
+    margin-bottom: 8px;
+}
+.sell{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+/* ===============購物車================== */
+.shoppingCar h5{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.myShooping{
+    width: 80%;
+    margin: 0 auto;
+}
+.myShooping th{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+.myShooping td{
+    border-bottom: 3px solid black;
+    padding: 0 0 20px 0;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 600;
+}
+.myshooping-item{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.myshooping-item img{
+    width: 70px;
+    height: 70px;
+}
+.myshooping-item p{
+    align-self: flex-end;
+}
+.deleteSelf{
+    border: 0;
+    padding: 10px;
+    font-weight: 600;
+}
+.deleteSelf:hover{
+    color: red;
+    cursor: pointer;
+}
+.shoppingCar-item{
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.totalPrice{
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+}
+.totalPrice p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.deleteALL{
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.deleteALL:hover{
+    color: red;
+    cursor: pointer;
+}
+/* =============訂單資訊============= */
+.order{
+    margin:  0 auto;
+    padding: 20%;
+}
+.order h6{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px;
+}
+.form label{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.form input,.form select{
+    padding: 8px;
+}
+.formitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.formitem input{
+    width: 90%;
+}
+.formitem p{
+    color: red;
+    font-weight: 550;
+}
+.order a{
+    display: block;
+}
+.sendHtml{
+    display: block;
+    text-align: center;
+}
+.send{
+    color: white;
+    background: black;
+    font-size: 19px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 0;
+    border-radius: 5px;
+}
+.send:hover{
+    cursor: pointer;
+    background: #301E5F;
+}
+/* ============後臺設定============ */
+.titleTxt{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.BackstageOrder{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.BackstageOrder tr,.BackstageOrder th,.BackstageOrder td{
+    border: 1px solid black;
+    padding: 5px;
+}
+.BackstageOrder-item a{
+    display: block;
+    color: blue;
+    align-items: center;
+}
+.deleteSelf-btn,.deleteALL-item{
+    cursor: pointer;
+    color: red;
+    border: 0;
+    font-weight: 600;
+    padding: 10px;
+}
+.deleteSelf-btn:hover{
+    background: rgb(180, 179, 179);
+}
+.deleteALL-item:hover{
+    background: rgb(180, 179, 179);
+}
+.deleteALL{
+    text-align: end;
+}
